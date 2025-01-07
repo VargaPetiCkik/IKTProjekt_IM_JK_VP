@@ -29,5 +29,27 @@ for i in t:
 if otos > egyes:
     print("Igen, több ötös lett, mint egyes.")
 else:
-    print("Nem, nem több ötös lett, mint egyes.")
+    print("Nem, nem lett több ötös, mint egyes.")
     
+#3 feladat
+
+n = 10
+t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40]
+
+pontok_szama = {}
+
+for pont in t:
+    if pont in pontok_szama:
+        pontok_szama[pont] += 1
+    else:
+        pontok_szama[pont] = 1
+
+l= None
+max_db = 0
+
+for pont, db in pontok_szama.items():
+    if db > max_db:
+        max_db = db
+        l = pont
+
+print(f"A {l} pont fordult elő benne legtöbbször.")
