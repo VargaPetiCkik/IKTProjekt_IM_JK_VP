@@ -53,3 +53,5 @@ for pont, db in pontok_szama.items():
         l = pont
 
 print(f"A {l} pont fordult elő benne legtöbbször.")
+
+#4.feladat
