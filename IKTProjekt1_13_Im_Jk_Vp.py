@@ -36,20 +36,20 @@ else:
 n = 10
 t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40]
 
-pontok_szama = {}
+psz = {}
 
-for pont in t:
-    if pont in pontok_szama:
-        pontok_szama[pont] += 1
+for p in t:
+    if p in psz:
+        psz[p] += 1
     else:
-        pontok_szama[pont] = 1
+        psz[p] = 1
 
 l= None
 max_db = 0
 
-for pont, db in pontok_szama.items():
+for p, db in psz.items():
     if db > max_db:
         max_db = db
-        l = pont
+        l = p
 
 print(f"A {l} pont fordult elő benne legtöbbször.")
