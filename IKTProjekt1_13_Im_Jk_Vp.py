@@ -7,13 +7,9 @@ for i in n:
     if(i>20):
         j+=5
 print(f"{j:.0f}% lett jobb mint 3-as")
-    
 
 
-
-
-#2 feladat
- 
+#2 feladat 
 n = 10
 t = [3, 37, 18, 38, 14, 23, 28, 27, 39, 40]  
 
@@ -31,11 +27,10 @@ if otos > egyes:
 else:
     print("Nem, nem lett több ötös, mint egyes.")
     
+    
 #3 feladat
-
 n = 10
 t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40]
-
 psz = {}
 
 for p in t:
@@ -46,7 +41,6 @@ for p in t:
 
 l= None
 max_db = 0
-
 for p, db in psz.items():
     if db > max_db:
         max_db = db
@@ -61,3 +55,4 @@ if 0 in n4:
     print("Igen, volt olyan diák, aki a nevén kívül nem írt rá semmit.")
 else:
     print("nincs olyan diák")    
+    
