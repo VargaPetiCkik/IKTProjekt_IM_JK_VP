@@ -30,7 +30,7 @@ else:
     
 #3 feladat
 n = 10
-t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40]
+t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40,]
 psz = []
 
 for i in range(41):
@@ -50,11 +50,16 @@ for i in range(41):
 print(f"A {lp} pont fordult elő benne legtöbbször.")
 
 #4.feladat
-n4={3, 14, 18, 32, 14, 23, 28, 27, 26, 40, 0}
+n=10
+t=[3,37,38,3,28,27,39,40,25,0]
+volt_diak=0
 
-if 0 in n4:
-    print("Igen, volt olyan diák, aki a nevén kívül nem írt rá semmit.")
+for i in range(n):
+    if t[i]<1:
+        volt_diak +=1
+
+if volt_diak > 0:
+    print("Igen, volt olyan diák aki a nevén kívül nem írt rá semmit")
 else:
-    print("nincs olyan diák")    
-    
+    print("Nem volt olyan diák, aki a nevén kívűl nem írt rá semmit")
 #vege
