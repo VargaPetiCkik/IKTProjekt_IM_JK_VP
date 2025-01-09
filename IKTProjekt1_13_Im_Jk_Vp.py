@@ -31,22 +31,23 @@ else:
 #3 feladat
 n = 10
 t = [3, 37, 18, 38, 3, 3, 28, 27, 39, 40]
-psz = {}
+psz = []
+
+for i in range(41):
+    psz.append(0)
 
 for p in t:
-    if p in psz:
-        psz[p] += 1
-    else:
-        psz[p] = 1
+    psz[p]+=1
 
-l= None
-max_db = 0
-for p, db in psz.items():
-    if db > max_db:
-        max_db = db
-        l = p
+lp=0
+max_db=0
 
-print(f"A {l} pont fordult elő benne legtöbbször.")
+for i in range(41):
+    if psz[i]> max_db:
+        max_db=psz[i]
+        lp=i
+
+print(f"A {lp} pont fordult elő benne legtöbbször.")
 
 #4.feladat
 n4={3, 14, 18, 32, 14, 23, 28, 27, 26, 40, 0}
