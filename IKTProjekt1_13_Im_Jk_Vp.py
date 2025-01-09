@@ -56,3 +56,4 @@ if 0 in n4:
 else:
     print("nincs olyan diák")    
     
+#vege
